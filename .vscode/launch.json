@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CalendarGrid",
+            "request": "launch",
+            "mainClass": "CalendarGrid",
+            "projectName": "Project_1cae3e94"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -14,7 +21,7 @@
             "type": "java",
             "name": "App",
             "request": "launch",
-            "vmArgs": "--module-path lib --add-modules javafx.controls,javafx.fxml", 
+            "vmArgs": "--module-path lib --add-modules javafx.controls,javafx.fxml",
             "mainClass": "App",
             "projectName": "Project_1cae3e94"
         }
