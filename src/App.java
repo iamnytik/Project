@@ -1,4 +1,3 @@
-/*Help chatGPT the placement of the buttons is affecting the layout of my calendar grid?*/
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.scene.Parent;
@@ -28,7 +27,6 @@ public class App extends Application {
     static int year=LocalDate.now().getYear();
     @Override
     public void start(Stage stage) {
-        /*This function is unable to display the Hbox  onto scene1 can you fix this chatGPT?*/
         String javaVersion = System.getProperty("java.version");
         String javafxVersion = System.getProperty("javafx.version");
         Label l = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
