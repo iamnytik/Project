@@ -20,7 +20,6 @@ import javafx.geometry.Rectangle2D;
 import javafx.stage.Screen;
 import javafx.scene.text.*;
 import javafx.event.EventHandler;
-
 import java.time.LocalDate;
 import java.time.Month;
 public class App extends Application {
@@ -70,7 +69,6 @@ public class App extends Application {
       
 
     }
-    
         void setMonthText(GridPane grid, String month) {
             // Create the label with the month name
             Label monthLabel = new Label(month);
@@ -82,7 +80,6 @@ public class App extends Application {
             GridPane.setHalignment(monthLabel, HPos.CENTER);
         }
         
-
     
     GridPane drawGrid(double X, double Y)
     {  
@@ -185,10 +182,6 @@ public class App extends Application {
                
             });
         
-        
-
-
-
 
     }
     public void setSelectedMonth(int op)
