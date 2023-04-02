@@ -198,6 +198,7 @@ public class App extends Application {
                 else
                 {
                     month=12;
+                    
                 }
             }
             System.out.println("yearis "+year+"month is"+month);
