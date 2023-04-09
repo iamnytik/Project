@@ -1,3 +1,5 @@
+
+import javafx.*;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.scene.Parent;
@@ -21,7 +23,9 @@ import javafx.scene.text.*;
 import javafx.event.EventHandler;
 import java.time.LocalDate;
 import java.time.Month;
-public class App extends Application {
+import java.time.YearMonth;
+
+public class   App  extends Application {
     
     static int month=LocalDate.now().getMonth().getValue();
     static int year=LocalDate.now().getYear();
@@ -64,7 +68,7 @@ public class App extends Application {
         initialize(X,Y,root,grid,hbox,prevButton,nextButton);
         stage.setScene(scene);
         stage.show();
-      
+   
 
     }
         void setMonthText(GridPane grid, String month) {
@@ -81,7 +85,7 @@ public class App extends Application {
     
     GridPane drawGrid(double X, double Y)
     {  
-
+        //chat GPT there is a problem with code not displaying last days of each month (28,29,30,31) correctly can you fix it?
         GridPane grid = new GridPane();
     grid.setPadding(new Insets(10));//sus
     grid.setHgap(10);
@@ -103,8 +107,8 @@ public class App extends Application {
 
     // Get first day of month and number of days in month
     LocalDate firstDayOfMonth = LocalDate.of(year, month, 1);
-    int daysInMonth = currentMonth.length(firstDayOfMonth.isLeapYear());
-
+    //int daysInMonth = currentMonth.length(firstDayOfMonth.isLeapYear());
+    int daysInMonth =YearMonth.of(firstDayOfMonth.getYear(), firstDayOfMonth.getMonth()).lengthOfMonth();
 
     // Center grid in window
     double offsetX = (X ) *0.40;
@@ -157,6 +161,7 @@ public class App extends Application {
                     s.getChildren().add(olBox);
                     
                     
+                    
                 }
                
             });
@@ -175,6 +180,7 @@ public class App extends Application {
                     s.getChildren().add(olBox);
 
 
+                    
                     
                 }
                
