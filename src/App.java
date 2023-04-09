@@ -85,7 +85,7 @@ public class   App  extends Application {
     
     GridPane drawGrid(double X, double Y)
     {  
-        //chat GPT there is a problem with code not displaying last days of each month (28,29,30,31) correctly can you fix it?
+        
         GridPane grid = new GridPane();
     grid.setPadding(new Insets(10));//sus
     grid.setHgap(10);
